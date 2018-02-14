@@ -1,0 +1,326 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="shortcut icon" href="favicon/favicon.png">		
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="vivienda y urbanismo, INVU, 9%, su casa al 9%, invu, ahorro, dinero, casa propia" content="Adobe GoLive" />
+<title>CALCULE SUS CUOTAS DE AHORRO Y PRESTAMO - INSTITUTO NACIONAL DE VIVIENDA Y URBANISMO</title>
+<link rel="stylesheet" href="css/style.css" />
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<csscriptdict import="import"><script type="text/javascript" src="GeneratedItems/CSScriptLib.js"></script></csscriptdict>
+<script src="file://c:/Users/Francisco/Documents/codjs/calc.js"></script>
+<csactiondict><script type="text/javascript">
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		pre_inicio02 = newImage('images/botones/inicio.jpg');
+		pre_traspasos02 = newImage('images/botones/traspasos.jpg');
+		pre_contactenos02 = newImage('images/botones/contactenos.jpg');
+		preloadFlag = true;
+	}
+}
+</script></csactiondict>
+</head>
+
+<csobj w="236" h="23" t="URLPopup" data="{ 0 = { label = &quot;Por favor escoja el monto que le Interesa:&quot;; selected = &quot;YES&quot;; }; 1 = { label = &quot;1.000.000,00&quot;; url = &quot;#&quot;; }; 2 = { label = &quot;2.000.000,00&quot;; url = &quot;calculocuotas/cuotas2.html&quot;; }; 3 = { label = &quot;3.000.000,00&quot;; url = &quot;calculocuotas/cuotas3.html&quot;; }; 4 = { label = &quot;4.000.000,00&quot;; url = &quot;calculocuotas/cuotas4.html&quot;; }; 5 = { label = &quot;5.000.000,00&quot;; url = &quot;calculocuotas/cuotas5.html&quot;; }; 6 = { label = &quot;6.000.000,00&quot;; url = &quot;calculocuotas/cuotas6.html&quot;; }; 7 = { label = &quot;7.000.000,00&quot;; url = &quot;calculocuotas/cuotas7.html&quot;; }; 8 = { label = &quot;8.000.000,00&quot;; url = &quot;calculocuotas/cuotas8.html&quot;; }; 9 = { label = &quot;9.000.000,00&quot;; url = &quot;calculocuotas/cuotas9.html&quot;; }; 10 = { label = &quot;10.000.000,00&quot;; url = &quot;calculocuotas/cuotas10.html&quot;; }; 11 = { label = &quot;11.000.000,00&quot;; url = &quot;calculocuotas/cuotas11.html&quot;; }; 12 = { label = &quot;12.000.000,00&quot;; url = &quot;calculocuotas/cuotas12.html&quot;; }; 13 = { label = &quot;13.000.000,00&quot;; url = &quot;calculocuotas/cuotas13.html&quot;; }; 14 = { label = &quot;14.000.000,00&quot;; url = &quot;calculocuotas/cuotas14.html&quot;; }; 15 = { label = &quot;15.000.000,00&quot;; url = &quot;calculocuotas/cuotas15.html&quot;; }; 16 = { label = &quot;16.000.000,00&quot;; url = &quot;calculocuotas/cuotas16.html&quot;; }; 17 = { label = &quot;17.000.000,00&quot;; url = &quot;calculocuotas/cuotas17.html&quot;; }; 18 = { label = &quot;18.000.000,00&quot;; url = &quot;calculocuotas/cuotas18.html&quot;; }; 19 = { label = &quot;19.000.000,00&quot;; url = &quot;calculocuotas/cuotas19.html&quot;; }; 20 = { label = &quot;20.000.000,00&quot;; url = &quot;calculocuotas/cuotas20.html&quot;; }; 21 = { label = &quot;21.000.000,00&quot;; url = &quot;calculocuotas/cuotas21.html&quot;; }; 22 = { label = &quot;22.000.000,00&quot;; url = &quot;calculocuotas/cuotas20.html&quot;; }; 23 = { label = &quot;23.000.000,00&quot;; url = &quot;calculocuotas/cuotas23.html&quot;; }; 24 = { label = &quot;24.000.000,00&quot;; url = &quot;calculocuotas/cuotas24.html&quot;; }; 25 = { label = &quot;25.000.000,00&quot;; url = &quot;calculocuotas/cuotas25.html&quot;; }; 26 = { label = &quot;50.000.000,00&quot;; url = &quot;calculocuotas/cuotas50.html&quot;; }; 27 = { label = &quot;100.000.000,00&quot;; url = &quot;calculocuotas/cuotas100.html&quot;; }; 28 = { label = &quot;150.000.000,00&quot;; url = &quot;calculocuotas/cuotas150.html&quot;; }; 29 = { label = &quot;200.000.000,00&quot;; url = &quot;calculocuotas/cuotas200.html&quot;; }; }" target="_top">
+
+<!-- <form action="#" method="post" name="form_name"> -->
+
+<div align="center">
+	Escriba la cantidad de millones o seleccione el monto que necesita:
+</div>
+<br><br>
+<div align="center">	
+	<input type="text" name="millions_value" id="millions_value" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+	<button onclick="calculateByMillions()">Calcular</button>
+</div>
+<br>
+<div align="center">
+<select name="popup_name" id="select_millions" onchange="calculateSelected();">
+	<option value="#" selected="selected">Seleccione el monto que le Interesa:</option>
+	<option value="1">1.000.000,00</option>
+	<option value="5">5.000.000,00</option>
+	<option value="10">10.000.000,00</option>
+	<option value="15">15.000.000,00</option>
+	<option value="20">20.000.000,00</option>
+	<option value="25">25.000.000,00</option>
+	<option value="30">30.000.000,00</option>
+	<option value="35">35.000.000,00</option>
+	<option value="40">40.000.000,00</option>
+	<option value="45">45.000.000,00</option>
+	<option value="50">50.000.000,00</option>
+	<option value="55">55.000.000,00</option>
+	<option value="60">60.000.000,00</option>
+	<option value="65">65.000.000,00</option>
+	<option value="70">70.000.000,00</option>
+	<option value="75">75.000.000,00</option>
+	<option value="80">80.000.000,00</option>
+	<option value="85">85.000.000,00</option>
+	<option value="90">90.000.000,00</option>
+	<option value="95">95.000.000,00</option>
+	<option value="100">100.000.000,00</option>
+	<option value="150">150.000.000,00</option>
+	<option value="200">200.000.000,00</option>
+	<option value="300">300.000.000,00</option>
+</select>
+</div>
+<!-- </form> -->
+
+<div align="center"><br /><strong><font size="3" color="purple" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif" id="amount"></font><font color="purple" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif"><br /></font></strong><br />
+
+</csobj></div>
+	</td>
+	<td width="10"></td>
+</tr>
+
+<table width="544" border="0" cellspacing="2" cellpadding="0" id="table_cuotas" style="display: none;">
+	<div align="right">
+	</div>
+	<br>
+	<tr height="25" style="border: 1px solid black;">
+	<td width="137" height="25">
+		<div align="center"><font size="2" color="black" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif"><strong>Plan</strong></font></div>
+	</td>
+	<td width="138" height="25">
+		<div align="center"><font size="2" color="black" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif"><strong>% Ahorro</strong></font>
+		</div>
+		</td>
+	<td width="137" height="25">
+		<div align="center"><font size="2" color="black" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif"><strong>Ahorro</strong></font>
+		</div>
+	</td>
+	<td width="138" height="25">
+		<div align="center"><font size="2" color="black" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif"><strong>% Préstamo</strong></font></div>
+	</td>
+	<td colspan="2" width="81" height="25">
+		<div align="center"><font size="2" color="black" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif"><strong>Cancelación </strong></font>
+		</div>
+	</td>
+	</tr>
+	<tr height="40" style="border: 1px solid black;">
+		<td colspan="1" rowspan="2" width="10%">
+			<div align="center">
+			</div>
+			<div align="center" style="margin-top: -10px">
+				<font size="3" color="#295f9b" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">Plan 2</font>
+			</div>
+		</td>
+		<td colspan="1" rowspan="2" width="15%">
+			<div align="center"><font size="3" color="#295f9b" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">35%</font></div>
+    	</td>
+		<td colspan="1" rowspan="2" width="15%">
+			<div align="center"><font size="3" color="#295f9b" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif" id="ahorro_2"></font></div>
+		</td>
+		<td colspan="1" rowspan="2" width="15%">
+			<div align="center"><font size="3" color="#295f9b" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">65%</font></div>
+		</td>
+		<td colspan="1" rowspan="1">
+			<div align="center"><font size="3" color="#295f9b" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">4 años (7%)</font>
+			</div>
+		</td>
+        <td colspan="1" rowspan="1">
+        	<div align="center"><font size="3" color="#295f9b" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">6 años (7.25%)</font>
+			</div>
+		</td>
+	</tr>
+	<tr height="40" style="border: 1px solid black;">
+		<td colspan="1">
+			<div align="center"><font size="3" color="#295f9b" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif" id="pago2_1"></font>
+			</div>
+		</td>
+		<td colspan="1">
+			<div align="center"><font size="3" color="#295f9b" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif" id="pago2_2"></font>
+			</div>
+		</td>
+    </tr>
+    <tr height="40" style="border: 1px solid black;">
+		<td colspan="1" rowspan="2" width="10%">
+			<div align="center">
+			</div>
+			<div align="center" style="margin-top: -10px">
+				<font size="3" color="#479d64" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">Plan 3</font>
+			</div>
+		</td>
+		<td colspan="1" rowspan="2" width="15%">
+			<div align="center"><font size="3" color="#479d64" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">30%</font></div>
+    	</td>
+		<td colspan="1" rowspan="2" width="15%">
+			<div align="center"><font size="3" color="#479d64" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif" id="ahorro_3"></font></div>
+		</td>
+		<td colspan="1" rowspan="2" width="15%">
+			<div align="center"><font size="3" color="#479d64" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">70%</font></div>
+		</td>
+		<td colspan="1" rowspan="1">
+			<div align="center"><font size="3" color="#479d64" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">6 años (7%)</font>
+			</div>
+		</td>
+        <td colspan="1" rowspan="1">
+        	<div align="center"><font size="3" color="#479d64" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">9 años (8%)</font>
+			</div>
+		</td>
+	</tr>
+	<tr height="40" style="border: 1px solid black;">
+        <td colspan="1"><div align="center"><font size="3" color="#479d64" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif" id="pago3_1"></font>
+			</div>
+		</td>
+		<td colspan="1"><div align="center"><font size="3" color="#479d64" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif" id="pago3_2"></font>
+			</div>
+		</td>
+    </tr>
+    <tr height="40" style="border: 1px solid black;">
+		<td colspan="1" rowspan="2" width="10%">
+			<div align="center">
+			</div>
+			<div align="center" style="margin-top: -10px">
+				<font size="3" color="#f9af7f" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">Plan 4</font>
+			</div>
+		</td>
+		<td colspan="1" rowspan="2" width="15%">
+			<div align="center"><font size="3" color="#f9af7f" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">25%</font></div>
+    	</td>
+		<td colspan="1" rowspan="2" width="15%">
+			<div align="center"><font size="3" color="#f9af7f" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif" id="ahorro_4"></font></div>
+		</td>
+		<td colspan="1" rowspan="2" width="15%">
+			<div align="center"><font size="3" color="#f9af7f" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">75%</font></div>
+		</td>
+		<td colspan="1" rowspan="1">
+			<div align="center"><font size="3" color="#f9af7f" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">7 años (7%)</font>
+			</div>
+		</td>
+        <td colspan="1" rowspan="1">
+        	<div align="center"><font size="3" color="#f9af7f" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">11 años (8.5%)</font>
+			</div>
+		</td>
+	</tr>
+	<tr height="40" style="border: 1px solid black;">
+        <td colspan="1"><div align="center"><font size="3" color="#f9af7f" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif" id="pago4_1"></font>
+			</div>
+		</td>
+		<td colspan="1"><div align="center"><font size="3" color="#f9af7f" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif" id="pago4_2"></font>
+			</div>
+		</td>
+    </tr>
+    <tr height="40" style="border: 1px solid black;">
+		<td colspan="1" rowspan="2" width="10%">
+			<div align="center">
+			</div>
+			<div align="center" style="margin-top: -10px">
+				<font size="3" color="#d14374" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">Plan 5</font>
+			</div>
+		</td>
+		<td colspan="1" rowspan="2" width="15%">
+			<div align="center"><font size="3" color="#d14374" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">25%</font></div>
+    	</td>
+		<td colspan="1" rowspan="2" width="15%">
+			<div align="center"><font size="3" color="#d14374" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif" id="ahorro_5"></font></div>
+		</td>
+		<td colspan="1" rowspan="2" width="15%">
+			<div align="center"><font size="3" color="#d14374" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">75%</font></div>
+		</td>
+		<td colspan="1" rowspan="1">
+			<div align="center"><font size="3" color="#d14374" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">8 años (7%)</font>
+			</div>
+		</td>
+        <td colspan="1" rowspan="1">
+        	<div align="center"><font size="3" color="#d14374" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">12 años (8.75%)</font>
+			</div>
+		</td>
+	</tr>
+	<tr height="40" style="border: 1px solid black;">
+        <td colspan="1"><div align="center"><font size="3" color="#d14374" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif" id="pago5_1"></font>
+			</div>
+		</td>
+		<td colspan="1"><div align="center"><font size="3" color="#d14374" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif" id="pago5_2"></font>
+			</div>
+		</td>
+    </tr>
+    <tr height="40" style="border: 1px solid black;">
+		<td colspan="1" rowspan="2" width="10%">
+			<div align="center">
+			</div>
+			<div align="center" style="margin-top: -10px">
+				<font size="3" color="#6e3ca1" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">Plan 7</font>
+			</div>
+		</td>
+		<td colspan="1" rowspan="2" width="15%">
+			<div align="center"><font size="3" color="#6e3ca1" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">25%</font></div>
+    	</td>
+		<td colspan="1" rowspan="2" width="15%">
+			<div align="center"><font size="3" color="#6e3ca1" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif" id="ahorro_7"></font></div>
+		</td>
+		<td colspan="1" rowspan="2" width="15%">
+			<div align="center"><font size="3" color="#6e3ca1" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">75%</font></div>
+		</td>
+		<td colspan="1" rowspan="1">
+			<div align="center"><font size="3" color="#6e3ca1" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">10 años (7%)</font>
+			</div>
+		</td>
+        <td colspan="1" rowspan="1">
+        	<div align="center"><font size="3" color="#6e3ca1" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">12 años (8.75%)</font>
+			</div>
+		</td>
+	</tr>
+	<tr height="40" style="border: 1px solid black;">
+        <td colspan="1"><div align="center"><font size="3" color="#6e3ca1" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif" id="pago7_1"></font>
+			</div>
+		</td>
+		<td colspan="1"><div align="center"><font size="3" color="#6e3ca1" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif" id="pago7_2"></font>
+			</div>
+		</td>
+    </tr>
+    <tr height="40" style="border: 1px solid black;" >
+		<td colspan="1" rowspan="2" width="10%">
+			<div align="center">
+			</div>
+			<div align="center" style="margin-top: -10px">
+				<font size="3" color="#308197" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">Plan 10</font>
+			</div>
+		</td>
+		<td colspan="1" rowspan="2" width="15%">
+			<div align="center"><font size="3" color="#308197" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">25%</font></div>
+    	</td>
+		<td colspan="1" rowspan="2" width="15%">
+			<div align="center"><font size="3" color="#308197" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif" id="ahorro_10"></font></div>
+		</td>
+		<td colspan="1" rowspan="2" width="15%">
+			<div align="center"><font size="3" color="#308197" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">75%</font></div>
+		</td>
+		<td colspan="1" rowspan="1">
+			<div align="center"><font size="3" color="#308197" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">12 años (7%)</font>
+			</div>
+		</td>
+        <td colspan="1" rowspan="1">
+        	<div align="center"><font size="3" color="#308197" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif">13 años (9%)</font>
+			</div>
+		</td>
+	</tr>
+	<tr height="40" style="border: 1px solid black;">
+        <td colspan="1"><div align="center"><font size="3" color="#308197" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif" id="pago10_1"></font>
+			</div>
+		</td>
+		<td colspan="1"><div align="center"><font size="3" color="#308197" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif" id="pago10_2"></font>
+			</div>
+		</td>
+    </tr>
+</table>
+
+<tr>
+<td width="10"></td>
+<td><div align="justify"><br /><font size="2" color="red" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif"><strong>El Plan 10</strong></font>
+<font size="2" color="#5a711f" face="Helvetica, Geneva, Arial, SunSans-Regular, sans-serif"> es el mas utilizado para iniciar sus contratos, y al cabo de 24 meses se pude pasar a un plan 3, cubrir la diferencia no ahorrada, y obtener su financiamiento, es exactamente igual que haber iniciado desde el plan 3, pero con la gran ventaja de iniciar el ahorro con una cuota muy baja</font></div>
+	</td>
+	<td width="10"></td>
+</tr>
+</table><br />
+</div></td>
+</tr>
+</table>
+	</td>
+</tr>
+</table>
+</div>
+<p></p>
+</body>
+</html>
